@@ -1,3 +1,5 @@
+
+// bright colors
 function Light()
 {   
 document.body.style.background= "url('img/light_bg.jpg') center no-repeat";
@@ -7,14 +9,14 @@ document.body.style.backgroundSize= "cover";
             elements[i].style.background="url('img/20p_white_bg.png')";
         }
 
-        var elements = document.getElementsByClassName("sidebar_menu, some_tekst")
+        var elements = document.getElementsByClassName("some_tekst")
         for (var i = 0; i < elements.length; i++) {
             elements[i].style.color="#2f2f2f";
             elements[i].style.textShadow="none";
         }
-
 }
 
+// dark colors
 function Dark()
 {   
 document.body.style.background= "url('img/dark_bg.jpg') center no-repeat";
@@ -31,6 +33,7 @@ var elements = document.getElementsByClassName("sidebar")
         }
 }
 
+// bright sidebar dark content background
 function Light_Dark ()
 {   
 document.body.style.background= "url('img/dark_bg.jpg') center no-repeat";
@@ -53,6 +56,7 @@ var elements = document.getElementsByClassName("sidebar")
         }
 }
 
+// dark sidebar bright content background
 function Dark_Light ()
 {   
 document.body.style.background= "url('img/light_bg.jpg') center no-repeat";
