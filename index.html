@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<title>Test</title>
+	<!-- link do samodzielnie zdefiniowanego arkusza styli -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<!--link do bootstrap 4 css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link" href="#">Item 1</a>
+				<a class="nav-item nav-link" href="#">Item 2</a>
+				<a class="nav-item nav-link" href="#">Item 3</a>
+				<a class="nav-item nav-link" href="#">Item 4</a>
+				<a class="nav-item nav-link" href="#">Item 5</a>
+				<a class="nav-item nav-link" href="#">Item 6</a>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row full-content">
+			<div class="sidebar col-sm-2">
+				<ul class="sidebar_menu">
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+						<li>Item 4</li>
+						<li>Item 5</li>
+						<li>Item 6</li>
+				</ul>	
+			</div>
+			<div class="content col-sm d-flex">
+				<div class="dark" onclick="Dark()"></div>
+				<div class="light" onclick="Light()"></div>
+				<div class="light_dark" onclick="Light_Dark()">
+					<div class="in_light"></div>
+					<div class="in_dark"></div>
+				</div>
+				<div class="light_dark" onclick="Dark_Light()">
+					<div class="in_dark2"></div>
+					<div class="in_light2"></div>
+				</div>
+				<div class="some_tekst some_tekst_box">
+					<h4>Sebastian Dyba przedstawia...</h5>
+					<h1 id="some_kind">
+						<span class="bracket">[</span> SOME KIND OF <span class="some_red">WEBSITE <span class="bracket">] </span><span style="font-size:0.5em;">v 1.0</span></span>
+					</h1>
+					<h5>... czyli ewoluujące web CV / portfolio.</h5>	
+					<p>
+						Założeniem projektu jest przedstawienie posiadanych umiejętności z zakresu następujacych dziedzin web developingu ????
+						- HTML
+						- CSS
+
+						"graphic designingu ???" z użyciem oprogramowania:
+						- photoshop
+						- indesign
+						- ilustrator
+						Kolejnym aspektem niniejszego projektu jest jego ewolucja. 
+						Projekt bedzie rozszerzany o kolejne wersje ( z zachowaniem starszych w celach archiwalnych) 
+						wraz z postepujacym wzrostem juz posiadanych umiejetnosci oraz nabyciem nowych 
+						( w przyszłości bardziej rozbudowane uzyxie JS czy PHP i oparcie strony o skromny 
+						aitorski CMS w celu zmiany chociaz by niniejszego tekstu.
+						Edycje oraz zlozenie calego projektu do kupy odbylo sie za pomoca
+						(Tu ikony programow) oraz wszechwiedzacego google w mysl zasady kto 
+						pyta nie bładzi a i zeby otrzumac wlasciwa odpowiedz nalezy wiedziec o co.pytac.
+						Dodarkowa ciekawostka moze byc to.iz projekt w wersji 1.0 z zalozenia zawiera 
+						jak najmniej elementow hraficznych w formach. Mimo i.z w niektorych przypadkach moze wydawac
+						sie iz zastosowanie grafiki ulatwilo by sprawe lub poproatu skrocilo kod o kilka linijek 
+						staram sie tego unikac i osiagnac to.przez odpowiednie zastosowanie css i html 
+						(patrz ikony zmiany koloru strony). Niektore funkcjonalnosci sa stricte kosmetyczne i 
+						nie wplywaja w zaden sposob na funkcjonalnosc strony ale sa gdyz uwazalem iz warto sie ich 
+						nauczyc w celu poznania pewnych zasad dzialania (patrz zmiana koloru strony)
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jscript.js"></script>
+	<!--JQuerry -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
