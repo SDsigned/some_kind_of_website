@@ -36,27 +36,16 @@
 						<li>Item 4</li>
 						<li>Item 5</li>
 						<li>Item 6</li>
-				</ul>	
+				</ul>
 			</div>
-			<div class="content col-sm d-flex">
-				<div class="color_themes">
-					<div class="dark" onclick="Dark()"></div>
-					<div class="light" onclick="Light()"></div>
-					<div class="light_dark" onclick="Light_Dark()">
-						<div class="in_light"></div>
-						<div class="in_dark"></div>
-					</div>
-					<div class="light_dark" onclick="Dark_Light()">
-						<div class="in_dark2"></div>
-						<div class="in_light2"></div>
-				</div>
-				</div>
+			<div class="col-sm d-flex">	
+				
 				<div class="some_tekst some_tekst_box">
-					<h4>Sebastian Dyba przedstawia...</h5>
+					<h4 class="sd">SDesign przedstawia...</h4>
 					<h1 id="some_kind">
 						<span class="bracket">[</span> SOME KIND OF <span class="some_red">WEBSITE <span class="bracket">] </span><span style="font-size:0.5em;">v 1.0</span></span>
 					</h1>
-					<h5>... czyli ewoluujące web CV / portfolio.</h5>	
+					<h4 class="cv">... czyli ewoluujące web CV / portfolio.</h4>	
 					<p>
 						Założeniem projektu jest przedstawienie posiadanych umiejętności z zakresu następujacych dziedzin web developingu ????
 						- HTML
@@ -83,9 +72,18 @@
 						nauczyc w celu poznania pewnych zasad dzialania (patrz zmiana koloru strony)
 					</p>
 				</div>
+				
 			</div>
 		</div>
 	</div>
+	<div class="footer">
+		<div class="color_theme">Theme color:</div>
+		<div class="color_theme">Dark <div class="color_theme_ico dark" onclick="Dark()"></div></div>
+		<div class="color_theme">Light <div class="color_theme_ico light" onclick="Light()"></div></div>
+		<div class="color_theme">Light / Dark <div class="color_theme_ico light_dark" onclick="Light_Dark()"></div></div>
+		<div class="color_theme">Dark / Light <div class="color_theme_ico dark_light" onclick="Dark_Light()"></div></div>
+	</div>
+	
 	<script src="js/jscript.js"></script>
 	<!--JQuerry -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
