@@ -89,3 +89,4 @@ var elements = document.getElementsByClassName("sidebar")
             elements[i].style.textShadow="none";
         }
 }
+$('#zalozenia').attr('href','../index.html');

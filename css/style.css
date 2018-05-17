@@ -7,33 +7,54 @@ body, html {
 	background-position: center;
     background-repeat: no-repeat;
 	background-size: cover;	
-	background-attachment:scroll;
+	background-attachment: fixed;
 	color:whitesmoke;
-}
-
-.box_clear {
-	clear:both;
-	padding-top:0.5em;
-	padding-bottom:0.5em;
 }
 
 .full-content {
 	height:100vh;
 }
 
+.float_left {
+	float:left;
+}
+
+/* skills */
+.box_clear {
+	clear:both;
+	padding-top:0.3em;
+	padding-bottom:0.3em;
+}
+
+.skills {
+	display:inline-block;
+	width: 75%;
+	border-bottom: 1px solid rgb(133, 133, 138);
+}
+
+.skills_icon {
+	float:left;
+	width:10%;
+	height:50%;
+	text-align: center;
+}
+
 /* content tekst */
 .some_tekst {
-	width:75%;
+	width:85%;
 	text-align: justify;
 	text-shadow: 1px 1px 5px black;
 	color:whitesmoke;
-}
-
-.some_tekst_box {
-	margin:auto;
+	margin:3em auto 0 auto;
 }
 
 /* some kind of brand header */
+#logo{
+	margin-top:2em;
+	margin-bottom:3em;
+	position: sticky;
+}
+
 .bracket {
 	font-size:1.3em; 
 	vertical-align: -5%;
@@ -60,7 +81,7 @@ body, html {
 /* side bar menu */
 .sidebar, .navbar {
 	background:url('../img/20p_bg.png') repeat;
-	display: flex;	
+	display:flex;	
 }
 
 .sidebar_menu {
@@ -70,13 +91,14 @@ body, html {
 	text-align: right;
 	width:100%;
 	margin:auto;
+	font-weight:bold;
 }
 
 /* theme change icon section */
 .color_theme {
 	margin-bottom:5px;
 	margin-right:10px;
-	vertical-align: middle;
+	vertical-align:middle;
 	font-size:0.7em;
 	float:right;
 }
@@ -125,7 +147,6 @@ body, html {
 	}
 }
 
-
 /* menu position section */
 @media only screen and (min-width: 768px){
 	nav.navbar{
@@ -157,13 +178,14 @@ body, html {
 		font-size: calc(1.13em + 6 * ((100vw - 320px) / 680));
 	  }
 	}
+
  @media screen and (min-width: 1000px) {
 	#some_kind {
 	  font-size: 3em;
 	}
 
 	.some_tekst {
-		font-size: 1em;
+		font-size: 1.3em;
 	}
 
 	.cv {
@@ -174,4 +196,3 @@ body, html {
 		font-size: 1.78em;
 	}
   }
-
