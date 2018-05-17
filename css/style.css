@@ -7,6 +7,14 @@ body, html {
 	background-position: center;
     background-repeat: no-repeat;
 	background-size: cover;	
+	background-attachment:scroll;
+	color:whitesmoke;
+}
+
+.box_clear {
+	clear:both;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
 }
 
 .full-content {
@@ -32,7 +40,6 @@ body, html {
 }
 
 #some_kind {
-	margin-top:-15px;
 	font-size:3em;
 	font-family: Impact, Charcoal, sans-serif;	
 }
@@ -41,9 +48,14 @@ body, html {
 	color:red;
 }
 
-.cv {
-	margin-top:-20px;
+.sd {
+	margin-bottom:-0.2em;
 }
+
+.cv {
+	margin-top:-0.7em;
+}
+
 
 /* side bar menu */
 .sidebar, .navbar {
@@ -130,15 +142,19 @@ body, html {
 /* font fluidity */
 @media screen and (min-width: 320px) {
 	#some_kind {
-	  font-size: calc(1.5em + 6 * ((100vw - 320px) / 680));
+	  font-size: calc(2em + 6 * ((100vw - 320px) / 680));
 	}
 
 	.some_tekst {
 		font-size: calc(0.5em + 6 * ((100vw - 320px) / 680));
 	  }
 
-	h4 {
-		font-size: calc(1em + 6 * ((100vw - 320px) / 680));
+	.sd {
+		font-size: calc(1.13em + 6 * ((100vw - 320px) / 680));
+	  }
+
+	  .cv {
+		font-size: calc(1.13em + 6 * ((100vw - 320px) / 680));
 	  }
 	}
  @media screen and (min-width: 1000px) {
@@ -148,6 +164,14 @@ body, html {
 
 	.some_tekst {
 		font-size: 1em;
-	  }
+	}
+
+	.cv {
+		font-size: 1.78em;
+	}
+
+	.sd {
+		font-size: 1.78em;
+	}
   }
 

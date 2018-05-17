@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>Test</title>
+	<!-- glyphicons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<!-- link do samodzielnie zdefiniowanego arkusza styli -->
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<!--link do bootstrap 4 css -->
@@ -28,7 +30,7 @@
 	</nav>
 	<div class="container-fluid">
 		<div class="row full-content">
-			<div class="sidebar col-sm-2">
+			<div class="sidebar col-sm-2"> <!--pasek menu boczny -->
 				<ul class="sidebar_menu">
 						<li>Item 1</li>
 						<li>Item 2</li>
@@ -38,23 +40,37 @@
 						<li>Item 6</li>
 				</ul>
 			</div>
-			<div class="col-sm d-flex">	
-				
+			<div class="col-sm d-flex">	<!--kolumna zawartości głównej -->
 				<div class="some_tekst some_tekst_box">
-					<h4 class="sd">SDesign przedstawia...</h4>
-					<h1 id="some_kind">
-						<span class="bracket">[</span> SOME KIND OF <span class="some_red">WEBSITE <span class="bracket">] </span><span style="font-size:0.5em;">v 1.0</span></span>
-					</h1>
-					<h4 class="cv">... czyli ewoluujące web CV / portfolio.</h4>	
-					<p>
-						Założeniem projektu jest przedstawienie posiadanych umiejętności z zakresu następujacych dziedzin web developingu ????
-						- HTML
-						- CSS
-
+					<div> <!--logo -->
+						<h4 class="sd">SDesign przedstawia...</h4>
+						<h1 id="some_kind">
+							<span class="bracket">[</span> SOME KIND OF <span class="some_red">WEBSITE <span class="bracket">] </span><span style="font-size:0.5em;">v 1.0</span></span>
+						</h1>
+						<h4 class="cv">... czyli ewoluujące web CV / portfolio</h4>
+					<div>	
+					<div class="box_clear">Założeniem projektu jest przedstawienie posiadanych umiejętności z zakresu następujacych dziedzin:web developingu ????</div>
+					<div class="box_clear">
+						<i class="far fa-file-code fa-7x" style="float:left;"></i>
+						<ul style="float:left;">
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+						</ul>
+					</div>
+					<div class="box_clear">
 						"graphic designingu ???" z użyciem oprogramowania:
-						- photoshop
-						- indesign
-						- ilustrator
+					</div>
+						<div class="box_clear">
+							<i class="far fa-file-code fa-7x" style="float:left;"></i>
+							<ul style="float:left; vertical-align:middle">
+								<li>photoshop</li>
+								<li>indesign</li>
+								<li>ilustrator</li>
+							</ul>
+						</div>
+					
+					<!-- 
 						Kolejnym aspektem niniejszego projektu jest jego ewolucja. 
 						Projekt bedzie rozszerzany o kolejne wersje ( z zachowaniem starszych w celach archiwalnych) 
 						wraz z postepujacym wzrostem juz posiadanych umiejetnosci oraz nabyciem nowych 
@@ -70,18 +86,18 @@
 						(patrz ikony zmiany koloru strony). Niektore funkcjonalnosci sa stricte kosmetyczne i 
 						nie wplywaja w zaden sposob na funkcjonalnosc strony ale sa gdyz uwazalem iz warto sie ich 
 						nauczyc w celu poznania pewnych zasad dzialania (patrz zmiana koloru strony)
-					</p>
+						-->
+					
 				</div>
-				
 			</div>
 		</div>
 	</div>
 	<div class="footer">
-		<div class="color_theme">Theme color:</div>
 		<div class="color_theme">Dark <div class="color_theme_ico dark" onclick="Dark()"></div></div>
 		<div class="color_theme">Light <div class="color_theme_ico light" onclick="Light()"></div></div>
 		<div class="color_theme">Light / Dark <div class="color_theme_ico light_dark" onclick="Light_Dark()"></div></div>
 		<div class="color_theme">Dark / Light <div class="color_theme_ico dark_light" onclick="Dark_Light()"></div></div>
+		<div class="color_theme">Theme color:</div>
 	</div>
 	
 	<script src="js/jscript.js"></script>
