@@ -3,6 +3,7 @@ function Light()
 {   
 document.body.style.background= "url('img/light_bg.jpg') center no-repeat";
 document.body.style.backgroundSize= "cover";
+document.body.style.backgroundAttachment= "fixed";
         var elements = document.getElementsByClassName("sidebar")
         for (var i = 0; i < elements.length; i++) {
             elements[i].style.background="url('img/20p_white_bg.png')";
@@ -26,6 +27,7 @@ function Dark()
 {   
 document.body.style.background= "url('img/dark_bg.jpg') center no-repeat";
 document.body.style.backgroundSize= "cover";
+document.body.style.backgroundAttachment= "fixed";
 var elements = document.getElementsByClassName("sidebar")
         for (var i = 0; i < elements.length; i++) {
             elements[i].style.background="url('img/20p_bg.png')";   
@@ -49,6 +51,7 @@ function Light_Dark ()
 {   
 document.body.style.background= "url('img/dark_bg.jpg') center no-repeat";
 document.body.style.backgroundSize= "cover";
+document.body.style.backgroundAttachment= "fixed";
 var elements = document.getElementsByClassName("sidebar")
         for (var i = 0; i < elements.length; i++) {
             elements[i].style.background="url('img/light_bg.jpg')";
@@ -72,6 +75,7 @@ function Dark_Light ()
 {   
 document.body.style.background= "url('img/light_bg.jpg') center no-repeat";
 document.body.style.backgroundSize= "cover";
+document.body.style.backgroundAttachment= "fixed";
 var elements = document.getElementsByClassName("sidebar")
         for (var i = 0; i < elements.length; i++) {
             elements[i].style.background="url('img/dark_bg.jpg')";
@@ -89,4 +93,12 @@ var elements = document.getElementsByClassName("sidebar")
             elements[i].style.textShadow="none";
         }
 }
-$('#zalozenia').attr('href','../index.html');
+
+$('#zalozenia').on('click', function() {
+    if ($('#skills_box').css('opacity') == 0) {
+        $('#skills_box').css('opacity', 1);
+    }
+    else {
+        $('#skills_box').css('opacity', 0);
+    }
+});
